@@ -1,0 +1,10 @@
+target/
+dbt_modules/
+dbt_packages/
+logs/
+scrapbooks/
+__pycache__
+
+.env
+
+*.code-workspace

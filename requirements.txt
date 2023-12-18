@@ -1,0 +1,4 @@
+dbt-core==1.7.4
+dbt-databricks==1.7.2
+sqlfluff==2.1.2
+sqlfluff-templater-dbt==2.1.2

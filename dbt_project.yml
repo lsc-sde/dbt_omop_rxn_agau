@@ -1,0 +1,55 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: "dbt_omop_rxn_agau"
+version: "0.0.1"
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: "dbt_omop_rxn_agau"
+
+vars:
+  achilles_source_schema_omop: "omop_source"
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target" # directory which will store compiled SQL files
+clean-targets: # directories to be removed by `dbt clean`
+  - "target"
+  # - "dbt_packages"
+
+# Prefer macros in spark-utils
+# https://github.com/dbt-labs/spark-utils
+dispatch:
+  - macro_namespace: dbt_utils
+    search_order: ["spark_utils", "dbt_utils"]
+  - macro_namespace: dbt_date
+    search_order: ["spark_utils", "dbt_date"]
+  - macro_namespace: dbt_expectations
+    search_order: ["spark_utils", "dbt_expectations"]
+  - macro_namespace: audit_helper
+    search_order: ["spark_utils", "audit_helper"]
+
+tests:
+  +store_failures: true
+
+models:
+  dbt_omop_rxn_agau:
+    bronze:
+      schema: bronze
+      +materialized: view
+      +tags:
+        - bronze
+      +docs:
+        node_color: gold
+seeds:
+  dbt_omop_rxn_agau:
+    seed_subfolder:
+      +schema: seed

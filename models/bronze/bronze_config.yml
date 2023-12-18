@@ -1,0 +1,158 @@
+version: 2
+models:
+  - name: bronze__care_site 
+    config:
+      alias: CARE_SITE 
+      schema: bronze
+  - name: bronze__cdm_source 
+    config:
+      alias: CDM_SOURCE 
+      schema: bronze
+  - name: bronze__cohort_definition 
+    config:
+      alias: COHORT_DEFINITION 
+      schema: bronze
+  - name: bronze__cohort 
+    config:
+      alias: COHORT 
+      schema: bronze
+  - name: bronze__concept_ancestor 
+    config:
+      alias: CONCEPT_ANCESTOR 
+      schema: bronze
+  - name: bronze__concept_class 
+    config:
+      alias: CONCEPT_CLASS 
+      schema: bronze
+  - name: bronze__concept_relationship 
+    config:
+      alias: CONCEPT_RELATIONSHIP 
+      schema: bronze
+  - name: bronze__concept_synonym 
+    config:
+      alias: CONCEPT_SYNONYM 
+      schema: bronze
+  - name: bronze__concept 
+    config:
+      alias: CONCEPT 
+      schema: bronze
+  - name: bronze__condition_era 
+    config:
+      alias: CONDITION_ERA 
+      schema: bronze
+  - name: bronze__condition_occurrence 
+    config:
+      alias: CONDITION_OCCURRENCE 
+      schema: bronze
+  - name: bronze__cost 
+    config:
+      alias: COST 
+      schema: bronze
+  - name: bronze__death 
+    config:
+      alias: DEATH 
+      schema: bronze
+  - name: bronze__device_exposure 
+    config:
+      alias: DEVICE_EXPOSURE 
+      schema: bronze
+  - name: bronze__domain 
+    config:
+      alias: DOMAIN 
+      schema: bronze
+  - name: bronze__dose_era 
+    config:
+      alias: DOSE_ERA 
+      schema: bronze
+  - name: bronze__drug_era 
+    config:
+      alias: DRUG_ERA 
+      schema: bronze
+  - name: bronze__drug_exposure 
+    config:
+      alias: DRUG_EXPOSURE 
+      schema: bronze
+  - name: bronze__drug_strength 
+    config:
+      alias: DRUG_STRENGTH 
+      schema: bronze
+  - name: bronze__episode_event 
+    config:
+      alias: EPISODE_EVENT 
+      schema: bronze
+  - name: bronze__episode 
+    config:
+      alias: EPISODE 
+      schema: bronze
+  - name: bronze__fact_relationship 
+    config:
+      alias: FACT_RELATIONSHIP 
+      schema: bronze
+  - name: bronze__location 
+    config:
+      alias: LOCATION 
+      schema: bronze
+  - name: bronze__measurement 
+    config:
+      alias: MEASUREMENT 
+      schema: bronze
+  - name: bronze__metadata 
+    config:
+      alias: METADATA 
+      schema: bronze
+  - name: bronze__note_nlp 
+    config:
+      alias: NOTE_NLP 
+      schema: bronze
+  - name: bronze__note 
+    config:
+      alias: NOTE 
+      schema: bronze
+  - name: bronze__observation_period 
+    config:
+      alias: OBSERVATION_PERIOD 
+      schema: bronze
+  - name: bronze__observation 
+    config:
+      alias: OBSERVATION 
+      schema: bronze
+  - name: bronze__payer_plan_period 
+    config:
+      alias: PAYER_PLAN_PERIOD 
+      schema: bronze
+  - name: bronze__person 
+    config:
+      alias: PERSON 
+      schema: bronze
+  - name: bronze__procedure_occurrence 
+    config:
+      alias: PROCEDURE_OCCURRENCE 
+      schema: bronze
+  - name: bronze__provider 
+    config:
+      alias: PROVIDER 
+      schema: bronze
+  - name: bronze__relationship 
+    config:
+      alias: RELATIONSHIP 
+      schema: bronze
+  - name: bronze__source_to_concept_map 
+    config:
+      alias: SOURCE_TO_CONCEPT_MAP 
+      schema: bronze
+  - name: bronze__specimen 
+    config:
+      alias: SPECIMEN 
+      schema: bronze
+  - name: bronze__visit_detail 
+    config:
+      alias: VISIT_DETAIL 
+      schema: bronze
+  - name: bronze__visit_occurrence 
+    config:
+      alias: VISIT_OCCURRENCE 
+      schema: bronze
+  - name: bronze__vocabulary
+    config:
+      alias: VOCABULARY
+      schema: bronze
